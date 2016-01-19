@@ -13,6 +13,7 @@ Configure your machine to run the project
 ## Run Dev
 
 ### iOS
+Run `npm start` from the top level.
 Open `ios/JustHackerNews.xcodeproj` and hit run in Xcode.
 
 
