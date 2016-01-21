@@ -2,20 +2,15 @@
  * @flow
  */
 import React from 'react-native';
-import {Styles, Colors} from './Styles';
-import Strings from './Strings';
+import {Styles, Colors} from './js/Styles';
+import Strings from './js/Strings';
+import PostList from './js/PostList';
 
-const { AppRegistry, NavigatorIOS, Component, Text} = React;
-
-class List extends Component {
-    render() {
-        return <Text>Hello</Text>
-    }
-}
+const {AppRegistry, NavigatorIOS, Component} = React;
 
 class JustForHackerNews extends Component {
     render() {
-        const initialRoute = {title: Strings.appName, component: List};
+        const initialRoute = {title: Strings.appName, component: PostList};
         return (
             <NavigatorIOS barTintColor={Colors.main}
                           titleTextColor={Colors.lightText}
