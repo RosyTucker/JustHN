@@ -154,7 +154,7 @@
     "comma-spacing": 0,
     "no-multi-spaces": 0,
     "brace-style": 0,                // enforce one true brace style (off by default)
-    "camelcase": 0,                  // require camel case names
+    "camelcase": 2,                  // require camel case names
     "consistent-this": [1, "self"],            // enforces consistent naming when capturing the current execution context (off by default)
     "eol-last": 1,                   // enforce newline at the end of file, with no multiple empty lines
     "func-names": 0,                 // require function expressions to have a name (off by default)
@@ -172,7 +172,7 @@
     "no-mixed-spaces-and-tabs": 1,   // disallow mixed spaces and tabs for indentation
     "quotes": [1, "single", "avoid-escape"], // specify whether double or single quotes should be used
     "quote-props": 0,                // require quotes around object literal property names (off by default)
-    "semi": 1,                       // require or disallow use of semicolons instead of ASI
+    "semi": 2,                       // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                  // sort variables within the same declaration block (off by default)
     "space-after-keywords": 1,       // require a space after certain keywords (off by default)
     "space-in-brackets": 0,          // require or disallow spaces inside brackets (off by default)
@@ -184,30 +184,20 @@
     "one-var": 0,                    // allow just one var statement per function (off by default)
     "wrap-regex": 0,                 // require regex literals to be wrapped in parentheses (off by default)
 
-    // Legacy
-    // The following rules are included for compatibility with JSHint and JSLint. While the names of the rules may not match up with the JSHint/JSLint counterpart, the functionality is the same.
-
-    "max-depth": 0,                  // specify the maximum depth that blocks can be nested (off by default)
-    "max-len": 0,                    // specify the maximum length of a line in your program (off by default)
-    "max-params": 0,                 // limits the number of parameters that can be used in the function declaration. (off by default)
-    "max-statements": 0,             // specify the maximum number of statement allowed in a function (off by default)
-    "no-bitwise": 1,                 // disallow use of bitwise operators (off by default)
-    "no-plusplus": 0,                // disallow use of unary operators, ++ and -- (off by default)
-
     "react/display-name": 0,
     "react/jsx-boolean-value": 0,
     "react/jsx-quotes": [1, "double", "avoid-escape"],
     "react/jsx-no-undef": 1,
     "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": 0,
+    "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/no-did-mount-set-state": [1, "allow-in-func"],
     "react/no-did-update-set-state": [1, "allow-in-func"],
     "react/no-multi-comp": 0,
-    "react/no-unknown-property": 0,
-    "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
-    "react/wrap-multilines": 0
+    "react/wrap-multilines": 1
   }
 }
