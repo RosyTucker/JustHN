@@ -9,6 +9,7 @@ Configure your machine to run the project
   - Install node 5.1+ either with `brew install node` or with nvm if using a node version manager
   - Install [watchman](https://facebook.github.io/watchman/docs/install.html) and [flow](http://flowtype.org) using `brew install watchman` and `brew install flow`
   - Install the [react-native-cli](https://facebook.github.io/react-native/docs/getting-started.html#content) using `npm install -g react-native-cli`
+  - Install mocha globally, to run the tests using `npm install -g mocha`
 
 ## Run Dev
 
