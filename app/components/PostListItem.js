@@ -1,24 +1,21 @@
-/*
- @flow
- */
+/* @flow */
 import React, {PropTypes, Text, View, TouchableHighlight} from 'react-native';
 import {Types, Styles, Colors} from './../utils';
 
 const PostListItem = (props:Object) => {
-    const post:Types.Post = props.post;
     return (
         <View style={Styles.postListItem}>
-            <TouchableHighlight underlayColor={Colors.highlight}>
+            <TouchableHighlight onPress={props.onSelect} underlayColor={Colors.highlight}>
                 <View>
                     <View>
                         <Text style={Styles.text} numberOfLines={2}>
-                            {post.title}
+                            {props.post.title}
                         </Text>
                         <Text style={Styles.text} numberOfLines={1}>
-                            {post.by}
+                            {props.post.by}
                         </Text>
                         <Text style={Styles.text}>
-                            Comments {post.descendants}
+                            Comments {props.post.descendants}
                         </Text>
                     </View>
                 </View>
@@ -27,6 +24,6 @@ const PostListItem = (props:Object) => {
     );
 };
 
-PostListItem.propTypes = {post: PropTypes.object.isRequired};
+PostListItem.propTypes = {post: PropTypes.object.isRequired, onSelect: PropTypes.func.isRequired};
 
 export default PostListItem;

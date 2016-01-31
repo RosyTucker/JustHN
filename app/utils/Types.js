@@ -1,6 +1,4 @@
-/*
- @flow
- */
+/* @flow */
 export type Post =  {
     by: String,
     descendants: Number,

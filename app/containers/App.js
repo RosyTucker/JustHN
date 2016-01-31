@@ -1,3 +1,4 @@
+/* @flow */
 import React from 'react-native';
 import thunkMiddleware from 'redux-thunk';
 import {createStore, applyMiddleware} from 'redux';

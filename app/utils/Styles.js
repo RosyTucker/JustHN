@@ -1,3 +1,4 @@
+/* @flow */
 import React from 'react-native';
 const {StyleSheet} = React;
 
@@ -14,7 +15,7 @@ export const Colors = {
 };
 
 export const Styles = StyleSheet.create({
-    postList: {
+    page: {
         marginTop: NAV_HEIGHT
     },
     postListItem: {
@@ -33,7 +34,15 @@ export const Styles = StyleSheet.create({
         marginTop: 8
     },
     navBar: {
-        flex: 1,
         backgroundColor: Colors.main
+    },
+    navButton: {
+        flex: 1,
+        marginLeft: 8,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    navButtonIcon: {
+        tintColor: 'white'
     }
 });

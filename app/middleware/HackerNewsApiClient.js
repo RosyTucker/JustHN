@@ -1,6 +1,4 @@
-/*
- * @flow
- */
+/* @flow */
 import Firebase from 'firebase';
 
 class HackerNewsApiClient {
