@@ -8,7 +8,7 @@ import JustForHackerNews from './JustForHackerNews';
 
 const store = applyMiddleware(thunkMiddleware)(createStore)(reducers, {});
 
-const App = props => <Provider store={store}><JustForHackerNews/></Provider>;
+const App = () => <Provider store={store}><JustForHackerNews/></Provider>;
 
 export default App;
 

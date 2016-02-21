@@ -1,9 +1,6 @@
 /* @flow */
 import React from 'react-native';
-import {connect} from 'react-redux';
-import {Strings, Types, Styles} from '../utils';
-import PostList from '../components/PostList';
-import {fetchPosts} from '../actions';
+import {Styles} from '../utils';
 
 const {Navigator, Text, PropTypes, TouchableOpacity, Image} = React;
 

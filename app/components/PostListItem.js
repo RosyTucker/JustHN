@@ -1,6 +1,6 @@
 /* @flow */
 import React, {PropTypes, Text, View, TouchableHighlight} from 'react-native';
-import {Types, Styles, Colors} from './../utils';
+import {Styles, Colors} from './../utils';
 
 const PostListItem = (props:Object) => {
     return (

@@ -1,7 +1,7 @@
 /* @flow */
 import Strings from './Strings';
 import {Styles, Colors} from './Styles';
-import Types from './Types';
+import * as Types from './Types';
 
 export {
     Strings,

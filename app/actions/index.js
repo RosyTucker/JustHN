@@ -1,7 +1,7 @@
 import HackerNewsApiClient from '../middleware/HackerNewsApiClient';
 import Firebase from 'firebase';
 
-const apiClient:HackerNewsApiClient = new HackerNewsApiClient(new Firebase('https://hacker-news.firebaseio.com/v0'));
+const apiClient = new HackerNewsApiClient(new Firebase('https://hacker-news.firebaseio.com/v0'));
 
 const RECEIVE_POSTS = 'RECEIVE_POSTS';
 
